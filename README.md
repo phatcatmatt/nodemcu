@@ -8,5 +8,7 @@ resources for nodemcu
 
 
 ### notes
+- `ctrl + x` to exit micropython repl
+
 - if rshell keeps failing to connect try flashing the board with `--flase_size=4MB` like this: 
   `esptool.py --port /dev/cu.SLAB_USBtoUART --baud 115200 write_flash --verify --flash_size=4MB -fm dout 0 Desktop/esp8266-20190125-v1.10.bin` from [this forum](https://forum.micropython.org/viewtopic.php?f=2&t=5951&start=10)
