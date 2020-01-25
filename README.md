@@ -14,7 +14,7 @@ resources for nodemcu
 
 ## [mpfshell](https://github.com/wendlers/mpfshell)
 - open mpfshell `mpfshell`
-- connect to board `open ttyUSB0`
+- connect to board `open ttyUSB0` (don't type `/dev/`)
 
 ## [rshell](https://github.com/dhylands/rshell)
 - open rshell `rshell`
