@@ -1,7 +1,7 @@
 # nodemcu
 resources for nodemcu (esp8266)
 
-## 1. flash micropython
+## flash micropython
 [Follow the steps here to flash the firmware](https://docs.micropython.org/en/latest/esp8266/tutorial/intro.html)
 (basically the following):
 1. `pip install esptool`
@@ -10,8 +10,6 @@ resources for nodemcu (esp8266)
 4. Flash micropython `esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=detect 0 ~/Downloads/esp8266-20190529-v1.11.bin`
 
 The best way to connect to the repl and transfer files is via mpfshell (rshell is good too but I've had some issues with it not connecting to the board).
-
-### notes
 
 ## [mpfshell](https://github.com/wendlers/mpfshell)
 - open mpfshell `mpfshell`
