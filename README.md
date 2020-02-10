@@ -10,7 +10,7 @@ resources for nodemcu (esp8266)
 4. Erase flash `esptool.py --port /dev/ttyUSB0 erase_flash`
 5. Flash micropython `esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=detect 0 ~/Downloads/esp8266-20190529-v1.11.bin`
 
-The best way to connect to the repl and transfer files is via mpfshell (rshell is good too but I've had some issues with it not connecting to the board).
+Now your board can run micropython scripts! The best way to connect to the repl and transfer files is via mpfshell (rshell is good too but I've had some issues with it not connecting to the board). 
 
 ## [mpfshell](https://github.com/wendlers/mpfshell)
 - open mpfshell `mpfshell`
