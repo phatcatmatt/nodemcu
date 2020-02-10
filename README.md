@@ -4,10 +4,11 @@ resources for nodemcu (esp8266)
 ## flash micropython
 [Follow the steps here to flash the firmware](https://docs.micropython.org/en/latest/esp8266/tutorial/intro.html)
 (basically the following):
-1. `pip install esptool`
-2. Find the usb interface the board is connected to, likey `/dev/ttyUSB0`  
-3. Erase flash `esptool.py --port /dev/ttyUSB0 erase_flash`
-4. Flash micropython `esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=detect 0 ~/Downloads/esp8266-20190529-v1.11.bin`
+1. [Download micropython firmware](http://micropython.org/download#esp8266)
+2. `pip install esptool`
+3. Find the usb interface the board is connected to, likey `/dev/ttyUSB0`  
+4. Erase flash `esptool.py --port /dev/ttyUSB0 erase_flash`
+5. Flash micropython `esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=detect 0 ~/Downloads/esp8266-20190529-v1.11.bin`
 
 The best way to connect to the repl and transfer files is via mpfshell (rshell is good too but I've had some issues with it not connecting to the board).
 
