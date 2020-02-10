@@ -6,7 +6,7 @@ resources for nodemcu (esp8266)
 (basically the following):
 1. [Download micropython firmware](http://micropython.org/download#esp8266)
 2. `pip install esptool`
-3. Find the usb interface the board is connected to, likey `/dev/ttyUSB0`  
+3. Find the usb interface the board is connected to, likely `/dev/ttyUSB0`  
 4. Erase flash `esptool.py --port /dev/ttyUSB0 erase_flash`
 5. Flash micropython `esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=detect 0 ~/Downloads/esp8266-20190529-v1.11.bin`
 
